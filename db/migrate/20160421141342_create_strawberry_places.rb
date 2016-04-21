@@ -1,9 +1,8 @@
 class CreateStrawberryPlaces < ActiveRecord::Migration
   def change
-    create_table :strawberryPlaces do |t|
-      t.string :name
-      t.string :address
-      t.string :phone_number
+    create_table :strawberry_places do |t|
+      t.float :latitude
+      t.float :longitude
 
       t.timestamps null: false
     end
